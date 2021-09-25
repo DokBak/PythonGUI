@@ -40,6 +40,27 @@ Python GUI program
         3. 체크되어있는 값을 취득
             variable의변수명.get()
                 파라미터 : 별도로 없음
+    GUI 프로그램 콤보박스 설정(8_combobox.py)
+        1. 콤보박스를 사용하기 위한 패키지 임포트
+            기존 tkinter 사용 임포트
+                from tkinter import *
+            콤보박스의 패키지는 tkinter내에 ttk폴더에 존재에 하므로
+                import tkinter.ttk as ttk
+        2. 콤보박스 설정
+            변수명 = ttk.Combobox()
+                파라미터 : 콤보박스가 생성될 프로그램, height, values, state
+                height : 콤보박스에서 한 번에 몇개의 데이터가 표시되는지를 설정
+                values : 콤보박스에 표시될 데이터 리스트
+                state : "readonly"로 설정 할 경우, 콤보박스는 읽기전용으로만 사용
+        3. 기본값 설정
+            변수명.set()
+                파라미터 : 파라미터로 작성된 값이 기본값으로 설정된다. 콤보박스 값도 가능
+                            예)값을 선택해주세요.
+            변수명.current()
+                파라미터 : 지정한 인덱스 값이 기본값으로 표시
+        4. 체크되어있는 값을 취득 
+            변수명.get()
+                파라미터 : 별도로 없음
 
 2021년 9월 24일
     GUI 프로그램 레이블 설정(3_label.py)
