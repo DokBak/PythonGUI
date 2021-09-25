@@ -61,6 +61,25 @@ Python GUI program
         4. 체크되어있는 값을 취득 
             변수명.get()
                 파라미터 : 별도로 없음
+    GUI 프로그램 프로그래스 바 설정(9_progressbar.py)
+        1. 프로그래스바를 사용하기 위한 패키지 임포트
+            기존 tkinter 사용 임포트
+                from tkinter import *
+            프로그래스바의 패키지는 tkinter내에 ttk폴더에 존재에 하므로
+                import tkinter.ttk as ttk
+        2. 프로그래스바 설정
+            변수명 = ttk.Progressbar()
+                파라미터 : 프로그래스바가 생성될 프로그램, maximum, mode, length, variable
+                maximum : 최대값을 지정(일반적으로 100%를 최대값으로 생각하기에 100으로 설정)
+                mode : 표시 모드를 설정
+                    indeterminate : 언제끝이 날지 모르는 상태를 표시(좌우로 움직이는 형태로 표시됨)
+                    determinate : 시작에서부터 끝까지 바가 차는 상태를 표시(좌에서 우로 게이지가 차는 형태로 표시됨)
+                length : 프로그래스바의 길이를 설정
+                variable : 현재 상태의 값을 확인 가능하다.
+        3. 프로그래스바 업데이트
+            변수명.update()
+                파라미터 : 별도로 없음
+                variable값이 시간에 따라, 작업 진척에 따라 진척상황을 표시할 때 실시간으로 보여주기 위함
 
 2021년 9월 24일
     GUI 프로그램 레이블 설정(3_label.py)
