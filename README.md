@@ -8,6 +8,25 @@ Python GUI program
 4. tkinter : kinter, t-kinter, tk-inter등으 불리며, 파이썬 설치시 자동 설치되는 기본 패키지
 
 공부 자료 출처 : 유투브 "나도코딩" nadocoding.tistory.com
+2021년 9월 25일
+    GUI 프로그램 체크박스 설정(6_checkbox.py)
+        1. 체크박스 설정
+            변수명 = Checkbutton()
+                파라미터 : 체크박스가 생성될 프로그램, 체크박스설명(text), 체크여부변수(varibale)
+                text에는 체크박스의 설명을 작성.
+                variable에는 체크 박스에 체크여부를 판단하는 변수를 체크박스 전에 선언후 사용한다.
+                예) chkvar = IntVar()
+        2. 체크박스 디폴트 선택 설정
+            변수명.select()
+                파리미터 : 별도로 없음
+                기본값이 선택이 되어있는 상태로 설정
+            변수명.deselect()
+                파라미터 : 별도로 없음
+                기본값이 선택이 되어있지 않은 상태로 설정
+        3. 체크되었는 값을 취득 
+            변수명.get()        
+                파라미터 : 별도로 없음
+                취득값이 0 : 체크 해제상태, 1 : 체크 상태
 
 2021년 9월 24일
     GUI 프로그램 레이블 설정(3_label.py)
@@ -85,6 +104,7 @@ Python GUI program
             변수명.curselection()
                 파라미터 : 별도로 없음
                 선택된 인덳의 값이 출력된다.(한 개만 선택시에도 값뒤에 쉼표가 붙는 문제가 발생)
+
 2021년 9월 23일
     GUI 프로그램 기본 프레임 설정(1_create_frame.py)
         1. GUI 프로그램을 만들기 위해 도움을 받을 패키지 tkinter를 임포트 
