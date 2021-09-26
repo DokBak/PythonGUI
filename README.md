@@ -85,6 +85,19 @@ Python GUI program
         5. 리스트박스와 연결 할 스크롤바 설정
             변수명.config(command=listbox.yview)
         6. 4번과 5번의 설정이 있어주어야 리스트박스와 스크롤바와의 연동이 제대로 이루어진다.
+    GUI 프로그램 그리드 설정(14.grid.py)
+        1. 그리드 설정
+            변수명.grid()
+            파라미터 : row, column, rowspan, columspan, sticky, padx, pady
+            row은 행 위치
+            colum은 열 위치
+            rowspan은 현재 위치로부터 아래쪽으로 몇 줄을 더함
+            columspan은 현재 위치로부터 오른쪽으로 몇 칸을 더함
+            sticky는 N+E+W+S 와 같이 방향을 지정해서 늘린다.
+            padx는 내부 내용을 기준으로 x축의 길이를 늘린다.
+            pady는 내부 내용을 기준으로 y축의 길이를 늘린다.
+            버튼등을 표시할때는 지금까지는 pack()으로 표시하였는데 pack()은 쌓는 느낌이고, grid()는 좌표에 위치시키는 느낌이다.
+            
 
 2021년 9월 26일
     GUI 프로그램 메뉴 설정(10_menu.py)
