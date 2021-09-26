@@ -8,6 +8,37 @@ Python GUI program
 4. tkinter : kinter, t-kinter, tk-inter등으 불리며, 파이썬 설치시 자동 설치되는 기본 패키지
 
 공부 자료 출처 : 유투브 "나도코딩" nadocoding.tistory.com
+
+2021년 9월 26일
+    GUI 프로그램 메뉴 설정(10_menu.py)
+        1. 메뉴 사전 정보
+            MAC OS에서는 tkinter만으로는 메뉴바 생성이 안된다.(?) 
+                - 이 코드로는 메뉴가 표시되지 않았다.
+        2. 메뉴 선언
+            변수명 = Menu()
+                파라미터 : 메뉴가 생성될 프로그램
+        3. 메뉴 표시
+            메뉴가 생성될 프로그램.config(menu= 변수명)
+                예) root.config(menu = menu)
+        4. 세부메뉴 선언
+            변수명 = Menu()
+                파라미터 : [2.]의변수명, tearoff = 0
+        5. 세부메뉴의 기능 추가
+            변수명.add_command()
+                파라미터 : label, command, state
+                label은 표시되는 메뉴의 이름
+                command은 실행 내용 
+                    ※command = root.quit으로 하면 프로그램종료
+                state를 disable로 설정하면 비활성화
+        6. 세부메뉴 구분자
+            변수명.add_separator()
+                파라미터 : 별도로 없음
+        7. 상위메뉴와 하위메뉴를 연결
+            변수명.add_cascade()
+                파라미터 : label, [2.]의변수명
+                label은 표시될 메뉴명
+                [2.]의변수명 = 하위 메뉴변수명
+
 2021년 9월 25일
     GUI 프로그램 체크박스 설정(6_checkbox.py)
         1. 체크박스 설정
