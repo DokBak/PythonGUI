@@ -54,6 +54,21 @@ Python GUI program
             아니오 : 0 (False)
             확인 : ok
             취소 : 예, 아니오, 취소의 경우 취소는 None값을 갖는다.
+    GUI 프로그램 프레임 설정(12_frame.py)
+        1. 프레임 설정
+            변수명 = Frame()
+                파라미터 : 프레임이 생성될 프로그램, relief, bd
+                relief은 테두리 모양을 의미. 예)solid
+                bd은 외곽선 두께 예) 1
+        2. 프레임 반영
+            변수명.pack()
+                파라미터 : side, fill, expand
+                side는 프레임이 표시될 위치
+                fill은 꽉 채우는 옵션(상하)
+                expand을 true로 넣으면 펼쳐지는 옵션(좌우)
+        3. 프레임 사용법
+            각종 기능들을 정의 할때 root에 표시되도록 설정하였는데 root가 아닌 프레임에 표시되도록 정의하면 관리가 편해진다.
+
 
 2021년 9월 26일
     GUI 프로그램 메뉴 설정(10_menu.py)
