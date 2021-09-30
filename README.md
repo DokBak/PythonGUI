@@ -8,6 +8,35 @@ Python GUI program
 4. tkinter : kinter, t-kinter, tk-inter등으 불리며, 파이썬 설치시 자동 설치되는 기본 패키지
 
 공부 자료 출처 : 유투브 "나도코딩" nadocoding.tistory.com
+2021년 9월 29일
+    GUI 프로그램 이미지 합치기프로그램(2_basic_function.py)
+        1. from tkinter import filedialog
+            파일 탐색기를 여는 패키지가 있으므로 추가만 해주면 된다.
+            기본 패키지를 추가시키는 __all__에 정의 된 내용만 사용가능하다.
+                from tkinter import *
+        2. 파일 탐색기 열어 파일 선택
+            변수명 = filedialog.askopenfilenames()
+                파라미터 : title, filetypes, initialdir
+                title은 파일탐색기의 이름
+                filetypes는 확장자를 정하는 옵션을 부여할수 있다. 가급적 튜플 형식으로 작성 
+                    예) ("PNG 파일","*.png")
+                initialdir는 파일 탐색기가 최초에 여는 경로를 보여준다.
+        3. 파일 탐색기에서 폴더 선택
+            변수명 = filedialog.askdirectory()
+                파라미터 : 별도로 없음
+        4. 파일 추가
+            파일 탐색기를 열어서 작업을 할 파일을 선택해 추가한다.
+        5. 선택 삭제
+            리스트박스에서 선택된 내용을 삭제한다.
+            리스트박스에서 선택된 내용을 삭제시 리스트의 인덱스를 뒤에서부터 삭제한다.
+                for index in reversed(list_file.curselection())
+                앞에서부터 삭제하면 뒤의 인덱스가 한 칸씩 앞으로 오며 선택내용이 삭제 안 될 수 있다.
+        6. 저장 경로(폴더)
+            파일 탐색기에서 폴더를 선택하여, 프로그램의 저장경로 위치에 반영해준다.
+        7. 시작
+            선택된 각 옵션들을 값 확인
+            파일 목록에 값이 있는지 확인
+            저장 경로가 선택되어 있는지 확인
 
 2021년 9월 28일
     GUI 프로그램 이미지 합치기프로그램(1_create_layout.py)
