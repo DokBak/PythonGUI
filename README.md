@@ -8,6 +8,17 @@ Python GUI program
 4. tkinter : kinter, t-kinter, tk-inter등으 불리며, 파이썬 설치시 자동 설치되는 기본 패키지
 
 공부 자료 출처 : 유투브 "나도코딩" nadocoding.tistory.com
+
+2021년 10월 1일
+    GUI 프로그램 자동 스크린 샷 저장(3_auto_screenshot.py)
+        1. 파이썬 이미지 라이브러리를 선언
+            from PIL import ImageGrab 
+        2. 현재 스크린 이미지를 저장
+            변수명 = ImageGrab.grab()
+                파라미터 : 별도로 없음
+            변수명.save()
+                파라미터 : 저장될 파일 이름
+
 2021년 9월 29일
     GUI 프로그램 이미지 합치기프로그램(2_basic_function.py)
         1. from tkinter import filedialog
