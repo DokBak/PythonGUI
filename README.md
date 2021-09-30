@@ -37,7 +37,16 @@ Python GUI program
             선택된 각 옵션들을 값 확인
             파일 목록에 값이 있는지 확인
             저장 경로가 선택되어 있는지 확인
-
+    리스트의 reverse와 reversed의 차이(practice.py)
+        1. reverse
+            리스트.reverse
+                리스트의 순서를 아예 역으로 바꾼다.
+        2. reversed
+            reversed(리스트)
+                reversed()의 파라미터로 리스트를 넣어준다.
+        3. 결론
+            리스트를 역으로 바꾸는 리스트의 기능으로써 바꾸는건지 별도의 함수로써 바꾸는건지를 확인할 수 있다.
+            
 2021년 9월 28일
     GUI 프로그램 이미지 합치기프로그램(1_create_layout.py)
         1.  프레임 구성
