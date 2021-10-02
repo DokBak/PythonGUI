@@ -44,6 +44,10 @@ Python GUI program
             변수명.save()
                 파라미터 : 파일경로
                 7.에서 만든 파일경로를 지정
+    GUI 프로그램 이미지 합치기프로그램(4_merge_image.py)
+        1. progress bar 설정
+            진행상황은 현재 어떤 이미지를 작업하는지에 대한 인덱스를 확인 할 수 있으면 된다.
+            enumerate()함수를 이용
 
 2021년 10월 1일
     GUI 프로그램 자동 스크린 샷 저장(3_auto_screenshot.py)
