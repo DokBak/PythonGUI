@@ -10,7 +10,7 @@ root.title("DokBak GUI")
 
 # 파일 추가
 def add_file():
-    files = filedialog.askopenfilenames(title = "이미지 파일을 선택하세요", filetypes=(("PNG 파일", "*.png"),("모든 파일", "*.*")), initialdir="C:/") # 최초에 C:/ 경로를 보여줌
+    files  = filedialog.askopenfilenames(title = "이미지 파일을 선택하세요", filetypes=(("PNG 파일", "*.png"),("모든 파일", "*.*")), initialdir="C:/") # 최초에 C:/ 경로를 보여줌
 
     # 사용자가 선택한 파일 목록
     for file in files:
@@ -39,10 +39,13 @@ def merge_image():
     # size -> size[0], width, size[1] : height
 
     # 이미지들의 각각의 가로 세로 높이를 가져온다.
-    widths = [x.size[0] for x in images] 
-    heights = [x.size[1] for x in images]
-    print("width : ", widths)
-    print("heights : ", heights)
+    # zip 설명 이전 코드 # 
+        # widths = [x.size[0] for x in images] 
+        # heights = [x.size[1] for x in images]
+        # print("width : ", widths)
+        # print("heights : ", heights)
+    # zip 설명 이전 코드 #
+    width, heights = zip(*(x.size for x in images))
 
     # 가로길이는 이미지들중에서 최대값, 세로길이는 모든 이미지들의 합
     max_width, total_height = max(widths), sum(heights)
