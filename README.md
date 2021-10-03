@@ -6,6 +6,10 @@ Python GUI program
 2. 언어 : Python 3.9.7 
 3. IDE(편집기) : VS CODE 
 4. tkinter : kinter, t-kinter, tk-inter등으 불리며, 파이썬 설치시 자동 설치되는 기본 패키지
+5. import tkinter.ttk as ttk : 콤보박스 사용시 추가
+6. import tkinter.messagebox as msgbox : 메시지박스 사용시 추가
+7. import tkinter import filedialog : 파일 탐색기 추가
+8. from PIL import Image : 파이썬 이미지 라이브러리
 
 공부 자료 출처 : 유투브 "나도코딩" nadocoding.tistory.com
 
