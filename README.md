@@ -28,8 +28,16 @@ Python GUI program
             if folder_selected is None:을 
             if folder_selected == "": 로 수정
         2. 이미지 통합 버그
-            c:/나 z:/ 등과 같이 권한이 없거나, 없는 드라이브로 설정할 경우에도 프로그래스 바는 정상작동이라고 표시되는 현상을 try exceptt 로 에러처리를 실시
-            
+            c:/나 z:/ 등과 같이 권한이 없거나, 없는 드라이브로 설정할 경우에도 프로그래스 바는 정상작동이라고 표시되는 현상을 try except 로 에러처리를 실시
+    GUI 프로그램 자동 스크린 샷 저장(6_advanced_screenshot.py)
+        1. 키보드 입력 설정
+            import keyboard
+        2. 키보드 입력 값 지정
+            keyboard.add_hotkey()
+                파라미터 : 키 값, 함수
+                키값은 "F9"처럼 작성
+                함수는 지정
+
 2021년 10월 2일
     GUI 프로그램 이미지 합치기프로그램(4_merge_image.py)
         1. 파이썬 이미지 라이브러리를 선언
